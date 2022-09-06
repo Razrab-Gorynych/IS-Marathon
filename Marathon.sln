@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marathon", "Marathon\Marathon.csproj", "{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlaUITests", "FlaUITests\FlaUITests.csproj", "{A778B190-47C0-4D8D-88C7-6990C9DF56CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A778B190-47C0-4D8D-88C7-6990C9DF56CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A778B190-47C0-4D8D-88C7-6990C9DF56CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A778B190-47C0-4D8D-88C7-6990C9DF56CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A778B190-47C0-4D8D-88C7-6990C9DF56CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA0B4927-BB1F-469F-998E-4F8AB1FC4A63}
+	EndGlobalSection
+EndGlobal

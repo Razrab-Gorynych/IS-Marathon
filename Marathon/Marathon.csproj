@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D81FD13-DC1D-4A98-8B5B-6D8A000C2E6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Marathon</RootNamespace>
+    <AssemblyName>Marathon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="FlaUI.Core, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FlaUI.Core.3.2.0\lib\net45\FlaUI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FlaUI.UIA3, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FlaUI.UIA3.3.2.0\lib\net45\FlaUI.UIA3.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.UIAutomationClient, Version=10.0.18362.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Interop.UIAutomationClient.10.18362.0\lib\net45\Interop.UIAutomationClient.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassTotal.cs" />
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthorization.Designer.cs">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoginHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoginHistory.Designer.cs">
+      <DependentUpon>FormLoginHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationToMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationToMarathon.Designer.cs">
+      <DependentUpon>FormRegistrationToMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResults.Designer.cs">
+      <DependentUpon>FormResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRunner.Designer.cs">
+      <DependentUpon>FormRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunnerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRunnerProfile.Designer.cs">
+      <DependentUpon>FormRunnerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRunnerSponsors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRunnerSponsors.Designer.cs">
+      <DependentUpon>FormRunnerSponsors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsor.Designer.cs">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsorProfile.Designer.cs">
+      <DependentUpon>FormSponsorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSponsorRunners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSponsorRunners.Designer.cs">
+      <DependentUpon>FormSponsorRunners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkAccounts.Designer.cs">
+      <DependentUpon>FormWorkAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarathonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarathonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthorization.resx">
+      <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoginHistory.resx">
+      <DependentUpon>FormLoginHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationToMarathon.resx">
+      <DependentUpon>FormRegistrationToMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResults.resx">
+      <DependentUpon>FormResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRunner.resx">
+      <DependentUpon>FormRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRunnerProfile.resx">
+      <DependentUpon>FormRunnerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRunnerSponsors.resx">
+      <DependentUpon>FormRunnerSponsors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsor.resx">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsorProfile.resx">
+      <DependentUpon>FormSponsorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSponsorRunners.resx">
+      <DependentUpon>FormSponsorRunners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkAccounts.resx">
+      <DependentUpon>FormWorkAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="MarathonDataSet.xsc">
+      <DependentUpon>MarathonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MarathonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MarathonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MarathonDataSet.xss">
+      <DependentUpon>MarathonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Бегун.ico" />
+    <Content Include="Resources\Бегун.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Interop.UIAutomationClient.10.18362.0\build\Interop.UIAutomationClient.targets" Condition="Exists('..\packages\Interop.UIAutomationClient.10.18362.0\build\Interop.UIAutomationClient.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Interop.UIAutomationClient.10.18362.0\build\Interop.UIAutomationClient.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Interop.UIAutomationClient.10.18362.0\build\Interop.UIAutomationClient.targets'))" />
+  </Target>
+</Project>
